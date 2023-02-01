@@ -1,0 +1,107 @@
+*{
+  box-sizing: border-box ;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+#body {
+  background-color: #000;
+  color: white;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow:auto;
+}
+
+ul,
+ol,
+li,
+a {
+  text-decoration: none;
+  list-style-type: none;
+}
+a {
+  color: white;
+}
+
+a:hover {
+  color: #f00;
+}
+
+
+#header-img {
+  width: 158px;
+  margin: 0;
+  padding-top: 7px;
+  padding-left: 11px;
+}
+
+#nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-content: center;
+  /* transition: 0.2s; */
+  justify-content: space-between;
+}
+
+
+/* svg--logo */
+.logo:hover {
+  fill: #dc143c;
+}
+
+.anime:hover {
+  fill: #dc143c;
+}
+/* hero-img */
+.hero-img {
+  background-image: url(/Asset/image/forntimg.jpg);
+  max-width: 100%;
+  min-height: 385px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#nav {
+  display: block;
+  margin-right: 26px;
+}
+
+#side-navbar {
+  display: flex;
+  font-size: 17px;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nav-link {
+  border: 0.5rem transparent solid;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.sign {
+  margin-right: 14px;
+}
+
+
+#nav-opicon,
+#nav-clicon {
+  font-size: 2rem;
+}
+
+#nav-opicon {
+  display: none;
+}
+
+#nav-clicon {
+  display: none;
+  float: right;
+}

@@ -1,0 +1,589 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#body {
+  background-color: #000;
+  color: white;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow:auto;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: #f00;
+}
+
+ul,
+ol,
+li,
+a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.hero-img {
+  background-image: url(Asset/image/hero3.png);
+  max-width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+#header-img {
+  width: 158px;
+  margin: 0;
+  padding-top: 7px;
+  padding-left: 11px;
+}
+
+#nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: transparent;
+  display: flex;
+  align-content: center;
+  /* transition: 0.2s; */
+  justify-content: space-between;
+}
+
+
+/* svg--logo */
+.logo:hover {
+  fill: #dc143c;
+}
+
+.anime:hover {
+  fill: #dc143c;
+}
+
+#nav {
+  display: block;
+}
+
+#side-navbar {
+  display: flex;
+  font-size: 17px;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nav-link {
+  border: 0.5rem transparent solid;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.sign {
+  margin-right: 14px;
+}
+
+#side-navbar li a:hover {
+  background-color: black;
+  border: 8px black solid;
+  border-radius: 25px;
+}
+
+#nav-opicon,
+#nav-clicon {
+  font-size: 2rem;
+}
+
+#nav-opicon {
+  display: none;
+}
+
+#nav-clicon {
+  display: none;
+  float: right;
+}
+
+/* ------login-from----------------------- */
+#full-card {
+  display: none;
+}
+
+.login {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  padding-top: 78px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: background-color 2ms;
+  overflow: auto;
+  /* pointer-events: none; */
+}
+
+.login-card {
+  background-color: #090d1b;
+  line-height: 30px;
+  padding: 20px;
+  color: white;
+  border: 2px black solid;
+  width: 30%;
+  min-width: 250px;
+  max-width: 350px;
+  min-height: 350px;
+  max-height: 400px;
+}
+
+.log-title {
+  text-align: center;
+  font-weight: 800;
+}
+
+.login-card input {
+  margin: 0.2rem;
+  width: 90%;
+  height: 1.4rem;
+  color: aliceblue;
+  background-color: #090d1b;
+  border: 2px #090d1b solid;
+}
+
+.sign {
+  text-align: end;
+}
+
+.sign-up {
+  text-align: right;
+}
+
+.login-card a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+.login-card a:hover {
+  color: #535bf2;
+}
+
+.login-card h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.login-card button {
+  border-radius: 8px;
+  border: 2px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #fffafa;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.login-card button:hover {
+  border-color: #646cff;
+}
+
+.login-card button:focus,
+.login-card button:focus-visible {
+  outline: 4px auto blue;
+}
+
+.side-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  z-index: 1;
+  width: 30%;
+  background: #000000;
+  height: 423px;
+  min-height: 350px;
+}
+
+.clo-icon {
+  font-size: 3rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.login-img {
+  width: 80px;
+}
+
+/* =-------------------login-End---------------------------- */
+
+/* --------description -------------*/
+
+#wel-card {
+  display: block;
+  position: absolute;
+  top: 0;
+  line-height: 1;
+  width:100%;
+  margin: 255px 0 0 0;
+  z-index: 10;
+}
+
+.wel-title {
+  width: 70%;
+  margin: auto;
+}
+.wel-colr {
+  color: #dc143c;
+}
+.wel-title p {
+  margin: 0;
+  font-family: "Merriweather", serif;
+  font-size: 1.2rem;
+
+}
+
+.wel-title h1 {
+  margin: 0;
+  font-family: "Bebas Neue", "Times New Roman", Times, serif;
+  font-size: 4rem;
+}
+.wel-link{
+  cursor: pointer;
+  text-align: center;
+  color: hsl(234, 76%, 46%);
+}
+.wel-icon{
+  
+}
+/* feature----------- */
+.feature {
+  padding-top: 80px;
+}
+
+.feature p {
+  font-family: "Merriweather", serif;
+}
+
+img.feature-icon {
+  width: 5rem;
+}
+
+.feature-title {
+  text-align: center;
+  padding: 11px;
+}
+
+.feature-list {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.qut {
+  color: #dc143c;
+  font-family: "Arvo", serif;
+  font-size: 25px;
+}
+
+li.feature-points {
+  background-color: #111;
+  text-align: center;
+  margin: 10px;
+  padding: 1.4rem;
+}
+
+/* ---------plans------------------- */
+
+.plan-card {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 27px auto;
+  width: 100%;
+}
+
+.plan-head {
+  font-family: "Arvo", serif;
+  font-size: 25px;
+  text-align: center;
+  color: #dc143c;
+  text-decoration: underline;
+  text-decoration-color: rgb(54, 21, 54);
+}
+
+.plan {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 20px;
+  align-content: center;
+  align-items: stretch;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.plan ul {
+  padding-inline: 10px;
+}
+
+.basic-title,
+.pro-title {
+  text-align: center;
+  background-color: blue;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.plan-b,
+.plan-p {
+  margin: 10px 0;
+  background-color: #111;
+  width: 250px;
+  min-width: 245px;
+  max-width: 300px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  align-items: center;
+  border: 1px solid;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  text-align: center;
+}
+
+.plan-icon {
+  margin-top: 23px;
+  width: 140px;
+  aspect-ratio: 1;
+  background-color: #23293c;
+  border: #000 1px solid;
+  border-radius: 50%;
+}
+
+.p-icon {
+  width: 92px;
+  margin: 21px 24px;
+}
+
+.plan-b {
+  border-color: blue;
+}
+
+.plan-p {
+  border-color: red;
+}
+
+.pro-title {
+  background-color: red;
+}
+
+.fe-card h3 {
+  margin: 0;
+  text-align: center;
+}
+
+/* -----buttons----- */
+.button a:hover {
+  color: #fff;
+}
+
+.button {
+  width: 140px;
+  padding-block: 10px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.basic-btn {
+  margin-top: 75px;
+  background-color: blue;
+  margin-bottom: 25px;
+}
+
+.basic-btn:hover {
+  background-color: #e52e3f;
+  box-shadow: 0px 15px 20px rgba(229, 46, 55, 0.4);
+  transform: translateY(-7px);
+}
+
+.pro-btn {
+  background-color: red;
+  margin-bottom: 20px;
+}
+
+.pro-btn:hover {
+  background-color: #2e39e5;
+  box-shadow: 0px 15px 20px rgba(46, 75, 229, 0.4);
+  transform: translateY(-7px);
+}
+
+/* -------end plan--=-------- */
+/* ------------footer----------- */
+footer {
+  background-color: #111;
+  padding: 38px;
+}
+
+.foo {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.foo h2 h3 {
+  text-align: center;
+}
+
+.foo-logo {
+  min-width: 140px;
+  width: 18%;
+}
+
+footer {
+  background-color: #111;
+}
+
+.foo-credit {
+  text-align: center;
+}
+
+.foo-credit p {
+  color: #9f9f9f;
+}
+
+.contact h2 {
+  color: #e52e3f;
+  text-align: center;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 31px;
+  font-size: 41px;
+  margin-block: 0;
+  padding-left: 0px;
+}
+
+/* -----------footer---------------- */
+/* end */
+#end {
+  padding-inline: 10px;
+  text-align: center;
+}
+
+/* ---------------media Query----------------- */
+@media only screen and (min-width: 600px){
+  #nav-clicon {
+    display: none !important;
+  }
+ 
+}
+@media only screen and (max-width: 600px) {
+  .hero-img {
+    height: 100vh;
+    min-height: 100vh;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+  }
+
+  #nav-opicon {
+    text-align: end;
+    display: block;
+  }
+
+  #nav {
+    display: none;
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1000;
+    width: 80%;
+    background-color: hsla(0, 0%, 0%, 0.849);
+    -webkit-backdrop-filter: blur(32px);
+    backdrop-filter: blur(22px);
+    overflow: hidden;
+    height: 100vh;
+    transition: right 3ms;
+  }
+
+  #side-navbar {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    font-size: 1.8rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  #wel-card {
+    margin-top: 251px;
+    z-index: 1;
+  }
+
+  #wel-card h1 {
+    font-size: 1.9rem;
+  }
+
+  #wel-card p {
+    font-size: 1rem;
+    letter-spacing: -0.19px;
+    font-style: normal;
+  }
+  .wel-link{
+    text-align: end;
+  }
+  img.feature-icon {
+    width: 3rem;
+  }
+
+  .qut {
+    color: #dc143c;
+    font-family: "Arvo", serif;
+    font-size: 1.2rem;
+  }
+
+  .feature-card {
+    width: 21rem;
+  }
+
+  li.feature-points {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    width: 90%;
+    max-width: 380px;
+  }
+
+}
