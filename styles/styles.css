@@ -28,7 +28,7 @@ a {
 }
 
 .hero-img {
-  background-image: url(Asset/image/hero3.png);
+  background-image: url(../Asset/image/hero3.png);
   max-width: 100%;
   height: 100vh;
   min-height: 600px;
