@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----------------------- favicon------------------- -->
+    <link rel="apple-touch-icon" sizes="180x180" href="Asset/favicon_io/apple-touch-icon.png">
+ 
+    <link rel="icon" type="image/png" sizes="32x32" href="Asset/favicon_io/favicon-32x32.png">
+ 
+    <link rel="icon" type="image/png" sizes="16x16" href="Asset/favicon_io/favicon-16x16.png">
+ 
+    <link rel="manifest" href="/site.webmanifest">
+ 
+    <title>BGAnime</title>
+ 
+    <!-- style link -->
+    <link rel="stylesheet" href="./styles/styles.css">
+ 
+    <!-- icons -->
+ 
+    <script src="https://kit.fontawesome.com/a0df00e761.js" crossorigin="anonymous"></script>
+ 
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+ 
+    <!-- fonts -->
+ 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700">
+ 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:400,400i,700">
+    <style>
+       /* fonts */
+       @import url("https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap");
+       @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap");
+       @import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@300;600&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600;800&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style>
+    <script src="script.js"></script>
+ </head>
+ 
+ <body id="body">
+    <div class="hero-img">
+       <!-- Nav-bar -->
+       <di id="nav-bar">
+          <!-- top logo -->
+          <div class="logo">
+             <a href="#"><img id="header-img" src="Asset/logo/mLogo.svg" alt="BGAnime logo"></a>
+          </div>
+          <!-- menu-bar -->
+          <div class="menu">
+             <nav id="nav">
+                <ul id="side-navbar">
+                   <li><i id="nav-clicon" onclick="closeMenu()" class="ri-close-line"></i></li>
+                   <li><a class="nav-link" href="#a1">About</a></li>
+                   <li><a class="nav-link" href="#a2">Pricing</a></li>
+                   <li><a class="nav-link" href="./home.html">Home</a></li>
+                   <li><a class="nav-link" href="#a4">Contact</a></li>
+                   <li><a class="nav-link" onclick="log()">Log-In</a></li>
+                </ul>
+             </nav>
+             <a onclick="openMenu()"><i id="nav-opicon" class="ri-menu-line"></i> </a>
+          </div>
+    </div>
+    </div>
+    <!-------------log-in-from--------------------->
+    <div id="full-card">
+       <div class="login">
+          <div class="login-card">
+             <form class="card" onSubmit={handlesubmit}>
+                <div class="log-title">
+                   <h3>Login</h3>
+                </div>
+                <div>
+                   <div>
+                      <label For="Email or UserName">Email or username</label>
+                      <br />
+                      <input type="text" placeholder="Email or username" required />
+                   </div>
+                   <div>
+                      <label For="Password">Password</label>
+   
+                      <br />
+                      <input type="Password" placeholder="Password" required />
+                   </div>
+                   <p>
+                      <a href="#"> Forgot Password?</a>
+                   </p>
+                </div>
+                <div>
+                   <button type="submit">Log in</button>
+                   <div class="sign-up" action="#">
+                      <p>
+                         <a href="#"> Don't have an account?</a>
+                      </p>
+                      <button>Sign-Up</button>
+                   </div>
+                </div>
+             </form>
+          </div>
+          <span  onclick="logout()" class="clo-icon">
+                <i class="ri-close-line"></i>
+          </span>
+       </div>
+    </div>
+ 
+  
+</body>
+</html>

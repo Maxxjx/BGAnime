@@ -61,7 +61,7 @@ a:hover {
 }
 /* hero-img */
 .hero-img {
-  background-image: url(/Asset/image/forntimg.jpg);
+  background-image: url(../Asset/image/hero3.png);
   max-width: 100%;
   min-height: 385px;
   background-repeat: no-repeat;
