@@ -263,9 +263,6 @@ a {
   text-align: center;
   color: hsl(234, 76%, 46%);
 }
-.wel-icon{
-  
-}
 /* feature----------- */
 .feature {
   padding-top: 80px;
@@ -335,6 +332,8 @@ li.feature-points {
   align-items: stretch;
   justify-content: center;
   gap: 4rem;
+  font-size: 13px;
+  
 }
 
 .plan ul {
@@ -420,7 +419,7 @@ li.feature-points {
 }
 
 .basic-btn {
-  margin-top: 75px;
+  margin-top: 113px;
   background-color: blue;
   margin-bottom: 25px;
 }
@@ -548,7 +547,7 @@ footer {
   }
 
   #wel-card {
-    margin-top: 251px;
+    margin-top: 55vh;
     z-index: 1;
   }
 
