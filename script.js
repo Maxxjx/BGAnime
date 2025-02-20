@@ -24,10 +24,44 @@ function log(){
   document.getElementById("full-card").style.display="block";
   document.getElementById("body").style.overflow="hidden";
 }
-function logout(){
-  document.getElementById("full-card").style.display="none";
-  document.getElementById("body").style.overflow="auto";
+
+// Close login modal
+function logout() {
+    document.getElementById('full-card').style.display = 'none';
 }
+
+// Login modal functionality
+function toggleLogin() {
+    const loginCard = document.getElementById('full-card');
+    loginCard.style.display = loginCard.style.display === 'none' ? 'block' : 'none';
+}
+
+// Form submission
+function handleSubmit(event) {
+    event.preventDefault();
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    
+    // Add your login logic here
+    console.log('Login attempt:', { email, password });
+}
+
+// Initialize
+document.addEventListener('DOMContentLoaded', function() {
+    // Hide login form initially
+    document.getElementById('full-card').style.display = 'none';
+    
+    // Add form submit handler
+    document.querySelector('.card').addEventListener('submit', handleSubmit);
+    
+    // Close modal when clicking outside
+    document.getElementById('full-card').addEventListener('click', function(e) {
+        if (e.target === this) {
+            logout();
+        }
+    });
+});
+
 // -------------------nav-bar---------------------------
 
 window.screenY=function(){navbar()};
