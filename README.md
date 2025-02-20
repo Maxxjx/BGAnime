@@ -3,6 +3,21 @@
 ![BGAnime Logo](Asset/logo/mLogo.svg)
 
 BGAnime is a modern anime streaming service template showcasing responsive design and interactive user interfaces. Built with a focus on user experience, performance, and accessibility.
+## 📋 Table of Contents
+- [Features](#-features)
+- [Pages](#-pages)
+- [Screenshots](#-screenshots)
+- [Technologies](#-technologies)
+- [Project Structure](#-project-structure)
+- [Quick Start](#-quick-start)
+- [Development](#-development)
+- [Browser Support](#-browser-support)
+- [Security](#-security)
+- [Progressive Web App](#-progressive-web-app)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Developer](#-developer)
+- [Support](#-support)
 
 ## ✨ Features
 
