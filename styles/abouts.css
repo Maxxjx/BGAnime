@@ -1,0 +1,208 @@
+.hero-img {
+  min-height: 100vh;
+  position: relative;
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../Asset/image/hero3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-section {
+  padding: 2.5rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  margin: 0 auto;
+  max-width: 1000px; /* Reduced from 1400px */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.about-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-container h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3.5rem; /* Reduced from 4rem */
+  margin-bottom: 1rem;
+  color: #dc143c;
+}
+
+.about-container > p {
+  font-family: "Merriweather", serif;
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+  color: #fff;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.about-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(220, 20, 60, 0.5);
+}
+
+.about-card h3 {
+  font-family: "Arvo", serif;
+  color: #dc143c;
+  font-size: 1.6rem; /* Reduced from 1.8rem */
+  margin-bottom: 1rem;
+}
+
+.about-card p {
+  font-family: "Merriweather", serif;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .about-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-container > p {
+    font-size: 0.9rem;
+  }
+
+  .about-card {
+    padding: 1.25rem;
+  }
+
+  .about-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .about-card p {
+    font-size: 0.9rem;
+  }
+}
+.dev-section {
+  background: #111;
+  padding: 4rem 2rem;
+  color: #fff;
+}
+
+.dev-section .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.dev-section h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3rem;
+  color: #dc143c;
+  margin-bottom: 3rem;
+}
+
+.dev-content {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  text-align: left;
+}
+
+.dev-profile {
+  flex: 0 0 300px;
+  text-align: center;
+}
+
+.dev-profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid #dc143c;
+  margin-bottom: 1rem;
+}
+
+.dev-profile h3 {
+  font-family: "Arvo", serif;
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.dev-profile .dev-role {
+  color: #dc143c;
+  font-family: "Merriweather", serif;
+  font-size: 1.1rem;
+}
+
+.dev-story {
+  flex: 1;
+}
+
+.dev-story p {
+  font-family: "Merriweather", serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.dev-tech h4 {
+  font-family: "Arvo", serif;
+  color: #dc143c;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.dev-tech ul {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.dev-tech li {
+  background: rgba(220, 20, 60, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 1px solid rgba(220, 20, 60, 0.3);
+  font-family: "Merriweather", serif;
+}
+
+@media (max-width: 768px) {
+  .dev-content {
+      flex-direction: column;
+      gap: 2rem;
+  }
+
+  .dev-profile {
+      flex: 0 0 auto;
+  }
+
+  .dev-story {
+      text-align: center;
+  }
+
+  .dev-tech ul {
+      justify-content: center;
+  }
+}

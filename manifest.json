@@ -1,0 +1,20 @@
+{
+  "name": "BGAnime",
+  "short_name": "BGAnime",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#dc143c",
+  "icons": [
+      {
+          "src": "Asset/favicon_io/android-chrome-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+      },
+      {
+          "src": "Asset/favicon_io/android-chrome-512x512.png",
+          "sizes": "512x512",
+          "type": "image/png"
+      }
+  ]
+}

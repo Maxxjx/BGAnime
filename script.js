@@ -1,3 +1,14 @@
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then(registration => {
+        console.log('ServiceWorker registered:', registration.scope);
+      })
+      .catch(error => {
+        console.log('ServiceWorker registration failed:', error);
+      });
+  });
+}
 
 // navbar-background-change
 window.onscroll = function() {scrollFunction()};
@@ -29,17 +40,44 @@ if(x>600){
   document.getElementById("nav-clicon").style.display="none";
 }
 }
-// function  openMenu(){
-//   document.getElementById("nav").style.display="block";
-//   document.getElementById("body").style.overflow="hidden";
-//   document.getElementById("nav-opicon").style.display="none";
-//   document.getElementById("nav-clicon").style.display="block";
-//   // document.getElementById("wel-card").style.display="none";
-// }
-// function  closeMenu(){
-//   document.getElementById("body").style.overflow="auto";
-//   document.getElementById("nav").style.display="none";
-//   document.getElementById("nav-opicon").style.display="block";
-//   document.getElementById("nav-clicon").style.display="none";
-//   // document.getElementById("wel-card").style.display="block";
-// }
+function  openMenu(){
+  document.getElementById("nav").style.display="block";
+  document.getElementById("body").style.overflow="hidden";
+  document.getElementById("nav-opicon").style.display="none";
+  document.getElementById("nav-clicon").style.display="block";
+  // document.getElementById("wel-card").style.display="none";
+}
+function  closeMenu(){
+  document.getElementById("body").style.overflow="auto";
+  document.getElementById("nav").style.display="none";
+  document.getElementById("nav-opicon").style.display="block";
+  document.getElementById("nav-clicon").style.display="none";
+  // document.getElementById("wel-card").style.display="block";
+}
+
+function handleError(error) {
+  console.error('Error:', error);
+  const errorContainer = document.createElement('div');
+  errorContainer.className = 'error-message';
+  errorContainer.innerHTML = `
+      <p>Something went wrong. Please try again.</p>
+      <button onclick="this.parentElement.remove()">Dismiss</button>
+  `;
+  document.body.appendChild(errorContainer);
+}
+
+// Check for browser support
+if ('IntersectionObserver' in window) {
+  // Lazy load images
+  const images = document.querySelectorAll('img[data-src]');
+  const imageObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              const img = entry.target;
+              img.src = img.dataset.src;
+              imageObserver.unobserve(img);
+          }
+      });
+  });
+  images.forEach(img => imageObserver.observe(img));
+}

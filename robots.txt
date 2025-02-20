@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /Asset/
+Sitemap: https://bganime.netlify.app/sitemap.xml
+
+# Block access to specific files
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.txt$
+
+# Allow search engines to access these files
+Allow: /sitemap.xml
