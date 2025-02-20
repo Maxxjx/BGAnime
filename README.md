@@ -1,6 +1,7 @@
 # BGAnime
-
-![BGAnime Logo](Asset/logo/mLogo.svg)
+<p align="center">
+  <img src="Asset/logo/mLogo.svg" alt="BGAnime Logo">
+</p>
 
 BGAnime is a modern anime streaming service template showcasing responsive design and interactive user interfaces. Built with a focus on user experience, performance, and accessibility.
 ## 📋 Table of Contents
