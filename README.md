@@ -21,6 +21,16 @@ BGAnime is a modern anime streaming service template showcasing responsive desig
 - **About**: Project information and developer details
 - **Login**: Secure user authentication system
 - **404**: Custom error page with navigation assistance
+## 📸 Screenshots
+
+| Home Page | About Page |
+|:---------:|:----------:|
+| ![Home Page](Asset/screenshots/home.png) | ![About Page](Asset/screenshots/about.png) |
+
+| Login Modal | 404 Page |
+|:-----------:|:--------:|
+| ![Login Modal](Asset/screenshots/login.png) | ![404 Page](Asset/screenshots/404.png) |
+
 
 ## 🛠️ Technologies
 
