@@ -20,10 +20,6 @@ function scrollFunction() {
   }
 } 
 //----------------- Login-Logout -------------------
-function log(){
-  document.getElementById("full-card").style.display="block";
-  document.getElementById("body").style.overflow="hidden";
-}
 
 // Close login modal
 function logout() {
