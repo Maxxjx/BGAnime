@@ -1,5 +1,6 @@
 .hero-img {
-  min-height: 100vh;
+  min-height: 620px;
+  max-height: 100vh;
   position: relative;
   padding-top: 80px;
   display: flex;
@@ -10,7 +11,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+/* about */
 .about-section {
   padding: 2.5rem;
   color: #fff;
@@ -19,7 +20,7 @@
   border-radius: 15px;
   margin: 0 auto;
   max-width: 1000px; /* Reduced from 1400px */
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(135, 31, 31, 0.37);
 }
 
 .about-container {
@@ -54,7 +55,7 @@
   border-radius: 10px;
   transition: transform 0.3s ease, background-color 0.3s ease;
   backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(135 31 31 / 37%);
 }
 
 .about-card:hover {

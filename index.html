@@ -16,7 +16,11 @@
    <!-- Critical Assets -->
    <link rel="preload" href="Asset/logo/mLogo.svg" as="image">
    <link rel="preload" href="styles/styles.css" as="style">
+   <link rel="preload" href="styles/abouts.css" as="style">
+
+   <!-- stylesheet -->
    <link rel="stylesheet" href="./styles/styles.css">
+   <link rel="stylesheet" href="./styles/abouts.css">
 
    <!-- PWA Support -->
    <link rel="manifest" href="manifest.json">
@@ -53,9 +57,9 @@
             <nav id="nav">
                <ul id="side-navbar">
                   <li><i id="nav-clicon" onclick="closeMenu()" class="ri-close-line"></i></li>
+                  <li><a class="nav-link" href="./home.html">Home</a></li>
                   <li><a class="nav-link" href="/aboutus.html">About-us</a></li>
                   <li><a class="nav-link" href="#a2">Pricing</a></li>
-                  <li><a class="nav-link" href="./home.html">Home</a></li>
                   <li><a class="nav-link" href="#a4">Contact</a></li>
                   <!-- Log-in Button -->
                   <li><button class="nav-link login-trigger" type="button" onclick="toggleLogin()">Log-In</button></li>
@@ -123,85 +127,80 @@
 
    </div>
    </div>
-   <!----------------description----------------->
-   <div id="a1" class="feature">
-      <div class="feature-title">
+   <!----------------  Feature Highlights ----------------->
+   <div id="a1" class="about-section"  style="max-width: none;">
+      <div class="about-container">
          <h2 class="qut">WATCH YOUR FAVOURIT SHOWS IN HERE:</h2>
-         <p>Housing the biggest collection of Anime on the internet.Right here to watch at your home.</p>
-      </div>
-      <ul class="feature-list">
-         <li class="feature-points">
-            <div class="feature-card">
+          <p>Housing the biggest collection of Anime on the internet.Right here to watch at your home.</p>
+          <div class="about-grid">
+              <div class="about-card">
                <img class="feature-icon" alt="hdicon" src="Asset/image/hdicon.svg">
-               <h3 class="qut">HD-Quality</h3>
-            </div>
-            <p>Anime to watch form normal to HD-Quality</p>
-         </li>
-         <li class="feature-points">
-            <div class="feature-card">
+               <h3 class="qut">HD-Quality Streaming</h3>
+                  <p>Enjoy your favorite anime in crystal clear HD quality.</p>
+              </div>
+              <div class="about-card">
                <img class="feature-icon" alt="deviceicon" src="Asset/image/deviceicon.svg">
-               <h3 class="qut">Link Upto-5 device</h3>
-            </div>
-            <p id="description">link upto 5 device to share with your family</p>
-         </li>
-         <li class="feature-points">
-            <div class="feature-card">
+               <h3 class="qut">Link up to 5 Devices</h3>
+                  <p>Watch on multiple devices with a single account.</p>
+              </div>
+              <div class="about-card">
                <img class="feature-icon" alt="fastupicon" src="Asset/image/fastupicon.svg">
-               <h3 class="qut">Fast-Update</h3>
-            </div>
-            <p id="description">Get-live fast update for your favourite show</p>
-         </li>
-      </ul>
-   </div>
-   <!---------------Plans-------------->
-   <section id="pricing" class="pricing">
-      <div class="container">
-          <h2>Choose Your Plan</h2>
-          <div class="pricing-grid">
-              <div class="plan">
-                  <h3>Beginner</h3>
-                  <div class="price">$19/mo</div>
-                  <ul>
-                      <li>Limited to 1 device </li>
-                      <li>Download shows</li>
-                      <li>Stream HD-Quality</li>
-                  </ul>
-                  <a href="#" class="cta-button">Get Started</a>
-              </div>
-              <div class="plan">
-                  <h3>Skilled</h3>
-                  <div class="price">$49/mo</div>
-                  <ul>
-                      <li>Link-upto 3 device</li>
-                      <li>Download shows in HD-Quality</li>
-                      <li>Stream Full-HD Quality</li>
-                      <li>Regular show updates</li>
-                  </ul>
-                  <a href="#" class="cta-button">Get Started</a>
-              </div>
-              <div class="plan">
-                  <h3>Expert</h3>
-                  <div class="price">$99/mo</div>
-                  <ul>
-                      <li>Link-Upto 5 device</li>
-                      <li>Download Full-HD</li>
-                      <li>Stream Upto 4k Quality</li>
-                      <li>Early access to episodes</li>
-                      <li>Get Insider Updates from the show</li>
-                  </ul>
-                  <a href="#" class="cta-button">Contact Sales</a>
+               <h3 class="qut">Fast Updates</h3>
+                  <p>Get the latest episodes as soon as they're available.</p>
               </div>
           </div>
       </div>
-  </section>
-
-  <section class="cta">
+  </div>
+ </div>
+   <!---------------Plans-------------->
+   <section id="pricing" class="pricing">
       <div class="container">
-          <h2>Ready to start your journey</h2>
-          <p>Join thousands of satisfied customers and Turn your Entertainment into Something More.</p>
-          <a href="#" class="cta-button">Start Your Free Trial</a>
+         <h2>Choose Your Plan</h2>
+         <div class="pricing-grid">
+            <div class="plan">
+               <h3>Beginner</h3>
+               <div class="price">$19/mo</div>
+               <ul>
+                  <li>Limited to 1 device </li>
+                  <li>Download shows</li>
+                  <li>Stream HD-Quality</li>
+               </ul>
+               <a href="#" class="cta-button">Get Started</a>
+            </div>
+            <div class="plan">
+               <h3>Skilled</h3>
+               <div class="price">$49/mo</div>
+               <ul>
+                  <li>Link-upto 3 device</li>
+                  <li>Download shows in HD-Quality</li>
+                  <li>Stream Full-HD Quality</li>
+                  <li>Regular show updates</li>
+               </ul>
+               <a href="#" class="cta-button">Get Started</a>
+            </div>
+            <div class="plan">
+               <h3>Expert</h3>
+               <div class="price">$99/mo</div>
+               <ul>
+                  <li>Link-Upto 5 device</li>
+                  <li>Download Full-HD</li>
+                  <li>Stream Upto 4k Quality</li>
+                  <li>Early access to episodes</li>
+                  <li>Get Insider Updates from the show</li>
+               </ul>
+               <a href="#" class="cta-button">Contact Sales</a>
+            </div>
+         </div>
       </div>
-  </section>
+   </section>
+
+   <section class="cta">
+      <div class="container">
+         <h2>Ready to start your journey</h2>
+         <p>Join thousands of satisfied customers and Turn your Entertainment into Something More.</p>
+         <a href="#" class="cta-button">Start Your Free Trial</a>
+      </div>
+   </section>
    <!-------------footer-------------->
    <hr>
    <footer id="a4">
