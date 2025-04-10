@@ -6,11 +6,30 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../Asset/image/hero3.jpg);
+  background-image: url(../Asset/image/hero1.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* Add this :before pseudo-element to create a dark overlay */
+.hero-img:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Adjustable opacity */
+  z-index: 1;
+}
+
+/* Add this to ensure content appears above the overlay */
+.hero-img > * {
+  position: relative;
+  z-index: 2;
+}
+
 /* about */
 .about-section {
   padding: 2.5rem;
