@@ -397,6 +397,27 @@ li.feature-points {
 }
 
 /* Pricing section styles */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: stretch; /* This makes all cards the same height */
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensure cards take full height of grid cell */
+}
+
+.pricing-content {
+  flex: 1; /* This makes the content grow to fill available space */
+}
+
+.pricing-button {
+  margin-top: auto; /* Pushes button to bottom */
+}
+
 .pricing {
   padding: var(--space-xxl) var(--space-md);
   background-color: var(--bg-dark);
